@@ -33,7 +33,6 @@
     <!-------------------------------------------->
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
-    <link rel="stylesheet" href="./styles/style.css">
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
 
@@ -48,44 +47,16 @@
     <nav id="navbarPlaceholder">Wayne</nav>
 
     <!-- the body of your page goes here -->
-    <div class="container">
-        <h1><span id="hikeName">this hike</span></h1>
-        <div class="position-relative">
-            <img class="hike-img responsive" src="" alt="Hike photo">
-            <button class="btn btn-primary position-absolute bottom-0 end-0 m-3" onclick="saveHikeDocumentIDAndRedirect()">Write Review</button>
+    <div class="card text-center">
+        <div class="card-header">
+          Review received successfully!
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Thanks for submitting your review!</h5>
+          <a href="main.html" class="btn btn-primary">See More Hikes</a>
         </div>
     </div>
-
-    <div class="container">
-        <h2>Reviews:</h2>
-        <div id="details-go-here"></div>
-        <!-- Here is the container for cards with horizontal scrolling -->
-        <div class="card-container">
-            <div id="reviewCardGroup" class="row row-cols-auto">
-                <!-- Add your card templates here -->
-            </div>
-        </div>
-    </div>
-    
-    <template id="reviewCardTemplate">
-        <div class="card bg-secondary">
-            <img class="card-img-top">
-            <div class="card-body bg-light">
-                <h5 class="title">placeholder</h5>
-                <p class="star-rating"></p>
-                <p class="time">placeholder</p>
-                <p class="level">placeholder</p>
-                <p class="season">placeholder</p>
-                <p class="scrambled">placeholder</p>
-                <p class="flooded">placeholder</p>
-                <br>
-                <p class="description">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-    </template>
     <!-- stuff -->
-
-    
 
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
@@ -95,7 +66,7 @@
     <!---------------------------------------------->
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
-    <script src="./scripts/eachHike.js"></script>
+    <!-- <script src="./scripts/script.js"></script> -->
 
 </body>
 
