@@ -34,7 +34,7 @@
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
 
 </head>
 
@@ -44,25 +44,32 @@
     <!------------------------------>
 
     <!-- our own navbar goes here -->
-    <nav id="navbarPlaceholder"></nav>
+    <nav id="navbarPlaceholder">Wayne</nav>
 
     <!-- the body of your page goes here -->
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-        <div class="overflow-hidden" style="max-height: 30vh;">
-            <div class="container px-5">
-                <img src="images/hike3.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
-                    width="200" height="200" loading="lazy">
-            </div>
-        </div>
-        <h1 class="display-4 fw-bold">Wanderlust Peaks: Unveiling the Splendor of Nature</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Welcome to "Wanderlust Peaks," a sanctuary for those seeking solace in the midst of nature's grandeur. Step into a world where every trail unveils a story, and every summit offers a breathtaking tableau of untamed beauty. As you embark on this journey, let the rustling leaves be your guide and the distant calls of wildlife serenade you through ancient forests. "Wanderlust Peaks" is more than a hike; it's an invitation to connect with the soul-stirring rhythms of the natural world.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Login</button>
-            </div>
-        </div>
-    </div>
     <!-- stuff -->
+
+    <div class="container">
+        <h1>Saved Hikes for <span id=name-goes-here></span></h1>
+        <!-- Here is container for cards  -->
+        <div class="container">
+            <div id="hikeCardGroup" class="row row-cols-auto">
+            </div>
+        </div>
+</div>
+
+<!-- Templates for general use, not displayed -->
+<template id="savedCardTemplate">
+        <div class="card py-2 mx-2 bg-light" style="width: 10rem;">
+            <img class="card-image card-img-top" src=" ..." alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-length">placeholder</p>
+                <br>
+                <a class="btn btn-secondary card-href" id="read-more">Read more ...</a>
+            </div>
+        </div>
+ </template>
 
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
@@ -72,10 +79,7 @@
     <!---------------------------------------------->
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
-    <script src="./scripts/script.js"></script>
-    <script>
-        logout();       //make sure user is logged out
-    </script>
+    <script src="./scripts/saved.js"></script>
 
 </body>
 
